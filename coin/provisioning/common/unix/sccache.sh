@@ -2,7 +2,7 @@
 
 #############################################################################
 ##
-## Copyright (C) 2017 The Qt Company Ltd.
+## Copyright (C) 2018 The Qt Company Ltd.
 ## Contact: http://www.qt.io/licensing/
 ##
 ## This file is part of the provisioning scripts of the Qt Toolkit.
@@ -33,32 +33,27 @@
 ##
 #############################################################################
 
-# This script installs JDK
-
 set -ex
 
-echo "Installing Java Development Kit"
+source "${BASH_SOURCE%/*}/../unix/DownloadURL.sh"
+source "${BASH_SOURCE%/*}/../unix/SetEnvVar.sh"
+## comment fo changin patchset..coin privision issue
 
-targetFile=jdk-8u102-macosx-x64.dmg
+function installSccache {
+    targetArch=$1
+    targetVersion=$2
+    sha1=$3
+    targetFile=sccache-$targetVersion-$targetArch.tar.gz
+    primaryUrl=http://ci-files01-hki.intra.qt.io/input/sccache/$targetFile
+    cacheUrl=https://github.com/mozilla/sccache/releases/download/$targetVersion/$targetFile
+    DownloadURL "$primaryUrl" "$cacheUrl" "$sha1" "$targetFile"
 
-url=ci-files01-hki.intra.qt.io:/hdd/www/input/mac
-# url_alt=http://download.oracle.com/otn-pub/java/jdk/8u102-b14/jdk-8u102-macosx-x64.dmg
+    sudo mkdir -p /usr/local/sccache
+    sudo tar -C /usr/local/sccache -x -z --totals --strip-components=1 --file="$targetFile"
 
-echo "Mounting $targetFile"
-sudo mkdir -p /Volumes/files
-sudo mount "$url" /Volumes/files
+    # add sccache __before__ the real compiler
+    SetEnvVar "PATH" "/usr/local/sccache:\$PATH"
 
-sudo cp "/Volumes/files/$targetFile" /tmp
-sudo umount /Volumes/files
-sudo hdiutil attach "/tmp/$targetFile"
-
-echo Installing JDK
-cd /Volumes/JDK\ 8\ Update\ 102/ && sudo installer -package JDK\ 8\ Update\ 102.pkg -target /
-
-echo "Unmounting $targetFile"
-sudo hdiutil unmount /Volumes/JDK\ 8\ Update\ 102/ -force
-
-echo "Disable auto update"
-sudo defaults write /Library/Preferences/com.oracle.java.Java-Updater JavaAutoUpdateEnabled -bool false
-
-echo "JDK Version = 8 update 102" >> ~/versions.txt
+    # disable sccache server from shutting down after being idle
+    SetEnvVar "SCCACHE_IDLE_TIMEOUT" "0"
+}

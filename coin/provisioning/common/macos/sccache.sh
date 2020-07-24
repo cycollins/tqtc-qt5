@@ -2,7 +2,7 @@
 
 #############################################################################
 ##
-## Copyright (C) 2017 The Qt Company Ltd.
+## Copyright (C) 2019 The Qt Company Ltd.
 ## Contact: http://www.qt.io/licensing/
 ##
 ## This file is part of the provisioning scripts of the Qt Toolkit.
@@ -33,32 +33,11 @@
 ##
 #############################################################################
 
-# This script installs JDK
-
 set -ex
 
-echo "Installing Java Development Kit"
+source "${BASH_SOURCE%/*}/../unix/sccache.sh"
 
-targetFile=jdk-8u102-macosx-x64.dmg
-
-url=ci-files01-hki.intra.qt.io:/hdd/www/input/mac
-# url_alt=http://download.oracle.com/otn-pub/java/jdk/8u102-b14/jdk-8u102-macosx-x64.dmg
-
-echo "Mounting $targetFile"
-sudo mkdir -p /Volumes/files
-sudo mount "$url" /Volumes/files
-
-sudo cp "/Volumes/files/$targetFile" /tmp
-sudo umount /Volumes/files
-sudo hdiutil attach "/tmp/$targetFile"
-
-echo Installing JDK
-cd /Volumes/JDK\ 8\ Update\ 102/ && sudo installer -package JDK\ 8\ Update\ 102.pkg -target /
-
-echo "Unmounting $targetFile"
-sudo hdiutil unmount /Volumes/JDK\ 8\ Update\ 102/ -force
-
-echo "Disable auto update"
-sudo defaults write /Library/Preferences/com.oracle.java.Java-Updater JavaAutoUpdateEnabled -bool false
-
-echo "JDK Version = 8 update 102" >> ~/versions.txt
+targetArch=x86_64-apple-darwin
+targetVersion=0.2.14
+sha1=764bc1664c0ff616d9980a6d127175d0a2041781
+installSccache "$targetArch" "$targetVersion" "$sha1"
