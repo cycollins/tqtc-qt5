@@ -36,7 +36,7 @@
 # This script installs QNX 7.
 
 targetFolder="/opt/"
-sourceFile="/net/ci-files01-hki.intra.qt.io/hdd/www/input/qnx/qnx700-20190325-2-macos.tar.xz"
+sourceFile="/net/ci-files01-hki.intra.qt.io/hdd/www/input/qnx/qnx700-20210323-macos.tar.xz"
 folderName="qnx700"
 
 sudo mkdir -p "$targetFolder"
@@ -54,3 +54,4 @@ fi
 # Set env variables
 echo "export QNX_700=$targetFolder/$folderName" >> ~/.bashrc
 echo "QNX SDP = 7.0.0" >> ~/versions.txt
+

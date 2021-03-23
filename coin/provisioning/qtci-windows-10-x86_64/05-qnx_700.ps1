@@ -36,10 +36,10 @@
 # This script installs QNX SDP 7.0
 
 $zip = Get-DownloadLocation "qnx700.7z"
-$url = "http://ci-files01-hki.intra.qt.io/input/qnx/qnx700-20190325-2-windows.7z"
+$url = "http://ci-files01-hki.intra.qt.io/input/qnx/qnx700-20210323-windows.7z"
 
 Download $url $url $zip
-Verify-Checksum $zip "1f10e9660efc81b18cb897871ba2b0384cf0fc6d"
+Verify-Checksum $zip "861ee872dae15cc75e6103efe89774e75170e519"
 Extract-7Zip $zip C:\
 
 Set-EnvironmentVariable "QNX_700" "C:\QNX700"
