@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
 set -ex
 
-brew install --build-from-source node
+BASEDIR=$(dirname "$0")
+"$BASEDIR/../common/macos/nodejs.sh"
