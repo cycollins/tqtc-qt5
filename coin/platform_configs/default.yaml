@@ -74,7 +74,7 @@ Configurations:
     Target os: 'WebAssembly'
     Compiler: 'GCC'
     Features: ['Packaging', 'DisableTests']
-    Configure arguments: '-opensource -confirm-license -verbose -prefix /home/qt/work/install -developer-build -release -static -nomake tests -nomake examples -no-sql-mysql -no-pch -no-dbus -no-headersclean -no-ssl -no-warnings-are-errors -no-feature-thread -xplatform wasm-emscripten'
+    Configure arguments: '-opensource -confirm-license -verbose -prefix /home/qt/work/install -release -static -nomake tests -nomake examples -no-sql-mysql -no-pch -no-dbus -no-headersclean -no-ssl -no-warnings-are-errors -no-feature-thread -xplatform wasm-emscripten'
 -
     Template: 'qtci-linux-SLES-15-x86_64'
     Compiler: 'GCC'
