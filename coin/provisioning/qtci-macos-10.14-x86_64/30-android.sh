@@ -53,9 +53,9 @@ toolsFile="sdk-tools-darwin-4333796.zip"
 
 ndkVersion="r20"
 ndkFile="android-ndk-$ndkVersion-darwin-x86_64.zip"
-sdkBuildToolsVersion="30.0.3"
+sdkBuildToolsVersion="31.0.0"
 # this is compile sdk version
-sdkApiLevel="android-30"
+sdkApiLevel="android-31"
 
 toolsSourceFile="$basePath/$toolsFile"
 ndkSourceFile="$basePath/$ndkFile"
