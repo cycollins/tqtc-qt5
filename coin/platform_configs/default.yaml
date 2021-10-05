@@ -58,7 +58,26 @@ Configurations:
     Compiler: 'GCC'
     Features: ['OutOfSourceBuild', 'Documentation']
     Configure arguments: '-opensource -confirm-license -verbose -prefix /home/qt/work/install -developer-build -nomake tests --linker=gold -R . -qtlibinfix TestInfix -qtnamespace TestNamespace -openssl -I {{.Env.OPENSSL_HOME}}/include -L {{.Env.OPENSSL_HOME}}/lib'
-
+-
+    Template: 'qtci-linux-Ubuntu-20.04-x86_64-50'
+    Compiler: 'GCC'
+    Features: ['InsignificantTests']
+    Configure arguments: '-opensource -confirm-license -verbose -prefix /home/qt/work/install -developer-build -nomake tests --linker=gold -R . -qtlibinfix TestInfix -qtnamespace TestNamespace -openssl -I {{.Env.OPENSSL_HOME}}/include -L {{.Env.OPENSSL_HOME}}/lib'
+-
+    Template: 'qtci-linux-Ubuntu-20.04-x86_64-50'
+    Compiler: 'GCC'
+    Features: ['InsignificantTests']
+    Configure arguments: '-opensource -confirm-license -verbose -prefix /home/qt/work/install -force-debug-info -nomake tests -no-widgets --linker=gold -R . -openssl -I {{.Env.OPENSSL_HOME}}/include -L {{.Env.OPENSSL_HOME}}/lib'
+-
+    Template: 'qtci-linux-Ubuntu-20.04-x86_64-50'
+    Compiler: 'GCC'
+    Features: ['DisableTests']
+    Configure arguments: '-opensource -confirm-license -verbose -prefix /home/qt/work/install -developer-build -nomake tests -nomake examples -no-gui -R . -openssl -I {{.Env.OPENSSL_HOME}}/include -L {{.Env.OPENSSL_HOME}}/lib'
+-
+    Template: 'qtci-linux-Ubuntu-20.04-x86_64-50'
+    Compiler: 'GCC'
+    Features: ['OutOfSourceBuild', 'Documentation', 'InsignificantTests']
+    Configure arguments: '-opensource -confirm-license -verbose -prefix /home/qt/work/install -developer-build -nomake tests --linker=gold -R . -qtlibinfix TestInfix -qtnamespace TestNamespace -openssl -I {{.Env.OPENSSL_HOME}}/include -L {{.Env.OPENSSL_HOME}}/lib'
 -
     Template: 'qtci-linux-openSUSE-15.1-x86_64'
     Compiler: 'GCC'
