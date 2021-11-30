@@ -57,7 +57,8 @@ if (Is64BitWinHost) {
 
 $OSVersion = (get-itemproperty -Path "HKLM:\SOFTWARE\Microsoft\Windows NT\CurrentVersion" -Name ProductName).ProductName
 
-if ($OSVersion -eq "Windows 10 Enterprise") {
+if (($OSVersion -eq "Windows 10 Enterprise") -or ($OSVersion -eq "Windows 10 Pro")) {
+    # In Windows 11 case $OSVersion is 'Windows 10 Pro'
     $winVersion = "win10"
     if (Is64BitWinHost) {
         $sha1 = "03d183dfb58941d60af9e1392489f36d17112362"
