@@ -55,7 +55,7 @@ if uname -a |grep -q Darwin; then
     sha1WasmBinaries="aedb30fb07d565c35305af0920ab072ae743895d"
 
     urlNodeBinariesExternal="https://storage.googleapis.com/webassembly/emscripten-releases-builds/deps/node-v12.9.1-darwin-x64.tar.gz"
-    urlNodeBinariesCache="$urlCache/mac/node-v12.9.1-darwin-x64.tar.gz"
+    urlNodeBinariesCache="$urlCache/macos/node-v12.9.1-darwin-x64.tar.gz"
     sha1NodeBinaries="f5976321ded091e70358e406b223f6fd64e35a43"
     pathNodeExecutable='node-v12.9.1-darwin-x64/bin/node'
 else
