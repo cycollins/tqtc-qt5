@@ -42,14 +42,7 @@ echo "Revision: $version"
 source "$SOURCE_DIRECTORY/st_set_swdev.sh"
 echo "SW-DEV: $SW_DEV"
 
-if [[ ! -f .qmake.super ]]; then
-  echo "need to create an empty file ${BUILD_DIRECTORY}/.qmake.super. This appears"
-  echo "to be a long-standing bug. This should be checked periodically to see if it is fixed."
-  if ! touch .qmake.super; then
-    echo "Failed to touch the file. Build exiting."
-    exit -1
-  fi
-fi
+./st_fix_super.sh
 
 check_call "$SOURCE_DIRECTORY/configure" -prefix "$BUILD_DIRECTORY/$version" -debug-and-release  -appstore-compliant -force-debug-info -c++std c++14 -commercial -confirm-license -xplatform macx-ios-clang -nomake examples -nomake tests -no-compile-examples -no-widgets -no-icu -no-feature-bearermanagement -securetransport -sdk iphoneos
 echo "Configuration complete."

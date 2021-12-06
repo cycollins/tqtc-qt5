@@ -42,6 +42,8 @@ echo "Revision: $version"
 source "$SOURCE_DIRECTORY/st_set_swdev.sh"
 echo "SW-DEV: $SW_DEV"
 
+./st_fix_super.sh
+
 check_call "$SOURCE_DIRECTORY/configure" -prefix "$BUILD_DIRECTORY/$version" -release -force-debug-info -c++std c++14 -opensource -confirm-license -shared -platform macx-clang -no-openssl -nomake examples -nomake tests -no-compile-examples -no-icu -no-feature-bearermanagement -securetransport
 echo "Configuration complete."
 
