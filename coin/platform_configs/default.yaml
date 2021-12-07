@@ -126,16 +126,24 @@ Configurations:
     Features: ['DisableTests']
     Configure arguments: '-opensource -confirm-license -verbose -prefix /Users/qt/work/install -developer-build -release -no-pch -no-framework -qtnamespace TestNamespace -nomake tests -nomake examples -I/usr/local/opt/openssl/include'
 -
+    Id: 'macos-latest-xcode-arm64-developer-build'
     Template: 'qtci-macos-11.0-arm64'
     Compiler: 'Clang'
     Features: ['Insignificant', 'DisableTests']
     Configure arguments: '-opensource -confirm-license -verbose -prefix /Users/qt/work/install -developer-build -release -force-debug-info -separate-debug-info -nomake tests -nomake examples -sysconfdir /Library/Preferences/Qt -no-sql-psql -no-sql-odbc -no-sql-mysql'
 -
+    Id: 'macos-latest-xcode-universal-packaging-build'
     Template: 'qtci-macos-11.0-x86_64-102'
     Compiler: 'Clang'
     Target arch: 'x86_64-arm64'
     Features: ['Insignificant']
     Configure arguments: '-opensource -confirm-license -verbose -prefix /Users/qt/work/install -release -force-debug-info -separate-debug-info -nomake tests -nomake examples -no-sql-mysql -no-sql-psql -no-sql-odbc -sysconfdir /Library/Preferences/Qt QMAKE_APPLE_DEVICE_ARCHS="x86_64 arm64"'
+-
+    Id: 'macos-11-arm64-tests'
+    Template: 'qtci-macos-11.0-arm64'
+    Compiler: 'Clang'
+    Features: ['Sccache', 'TestOnly', 'Insignificant']
+    Platform dependency: 'macos-latest-xcode-universal-packaging-build'
 -
     Template: 'qtci-macos-10.14-x86_64'
     Target os: 'IOS_ANY'
