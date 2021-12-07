@@ -65,6 +65,7 @@ if ($OSVersion -eq "Windows 10 Enterprise") {
         $sha1 = "9c0fc186605522ac0ac11066c10c3f3e8a95a705"
         #Remove special handling when all packages are in same dir, exception now for win10 x86->the archive had to be rebuild
         $squishUrl = "\\ci-files01-hki.intra.qt.io\provisioning\squish\jenkins_build\stable\6.6.1_rerun"
+        $version = "6.6.1"
     }
 } elseif ($OSVersion -eq "Windows 7 Enterprise") {
     $winVersion = "win7"
