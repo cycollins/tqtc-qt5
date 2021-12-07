@@ -73,16 +73,32 @@ Configurations:
     Template: 'qtci-linux-RHEL-7.6-x86_64'
     Target os: 'QNX_700'
     Target arch: 'armv8'
-    Compiler: 'GCC'
+    Compiler: 'QCC'
     Features: ['Packaging', 'DisableTests']
     Configure arguments: '-opensource -confirm-license -verbose -extprefix /home/qt/work/install -release -nomake tests -nomake examples -no-sql-mysql -opengl es2 -qpa qnx -xplatform qnx-aarch64le-qcc -I /opt/qnx700/target/qnx7/usr/include/openssl1_1'
 -
     Template: 'qtci-linux-RHEL-7.6-x86_64'
     Target os: 'QNX_700'
     Target arch: 'x86_64'
-    Compiler: 'GCC'
+    Compiler: 'QCC'
     Features: ['Packaging', 'DisableTests']
     Configure arguments: '-opensource -confirm-license -verbose -extprefix /home/qt/work/install -release -nomake tests -nomake examples -no-sql-mysql -opengl es2 -qpa qnx -xplatform qnx-x86-64-qcc -I /opt/qnx700/target/qnx7/usr/include/openssl1_1'
+-
+    Template: 'qtci-linux-Ubuntu-18.04-x86_64'
+    Target os: 'QNX_710'
+    Target arch: 'armv8'
+    Compiler: 'QCC'
+    Environment variables: ['PATH=$PATH:/opt/qnx710/host/linux/x86_64/usr/bin:/opt/qnx710/.qnx/bin:/opt/qnx710/host/common/bin', 'MAKEFLAGS=-I/opt/qnx710/target/qnx7/usr/include', 'QNX_CONFIGURATION=/opt/qnx710/.qnx', 'QNX_CONFIGURATION_EXCLUSIVE=/opt/qnx710/.qnx', 'QNX_TARGET=/opt/qnx710/target/qnx7', 'QNX_HOST=/opt/qnx710/host/linux/x86_64']
+    Features: ['Packaging', 'DisableTests']
+    Configure arguments: '-opensource -confirm-license -verbose -extprefix /home/qt/work/install -release -nomake tests -nomake examples -no-sql-mysql -opengl es2 -qpa qnx -xplatform qnx-aarch64le-qcc'
+-
+    Template: 'qtci-linux-Ubuntu-18.04-x86_64'
+    Target os: 'QNX_710'
+    Target arch: 'x86_64'
+    Compiler: 'QCC'
+    Environment variables: ['PATH=$PATH:/opt/qnx710/host/linux/x86_64/usr/bin:/opt/qnx710/.qnx/bin:/opt/qnx710/host/common/bin', 'MAKEFLAGS=-I/opt/qnx710/target/qnx7/usr/include', 'QNX_CONFIGURATION=/opt/qnx710/.qnx', 'QNX_CONFIGURATION_EXCLUSIVE=/opt/qnx710/.qnx', 'QNX_TARGET=/opt/qnx710/target/qnx7', 'QNX_HOST=/opt/qnx710/host/linux/x86_64']
+    Features: ['Packaging', 'DisableTests']
+    Configure arguments: '-opensource -confirm-license -verbose -extprefix /home/qt/work/install -release -nomake tests -nomake examples -no-sql-mysql -opengl es2 -qpa qnx -xplatform qnx-x86-64-qcc'
 -
     Template: 'qtci-windows-10-x86_64-52'
     Target os: 'WebAssembly'
