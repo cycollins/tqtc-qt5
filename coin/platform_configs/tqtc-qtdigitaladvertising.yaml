@@ -1,0 +1,3 @@
+Version: 2
+Include: [ qt5.yaml ]
+Configurations: []
