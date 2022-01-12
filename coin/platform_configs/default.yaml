@@ -133,19 +133,19 @@ Configurations:
 -
     Template: 'qtci-macos-11.0-arm64'
     Compiler: 'Clang'
-    Features: ['Insignificant', 'DisableTests']
+    Features: ['DisableTests']
     Configure arguments: '-opensource -confirm-license -verbose -prefix /Users/qt/work/install -developer-build -release -force-debug-info -separate-debug-info -nomake tests -nomake examples -sysconfdir /Library/Preferences/Qt -no-sql-psql -no-sql-odbc -no-sql-mysql'
 -
     Template: 'qtci-macos-11.0-x86_64-102'
     Compiler: 'Clang'
     Target arch: 'x86_64-arm64'
-    Features: ['Insignificant']
+    Features: ['InsignificantTests']
     Configure arguments: '-opensource -confirm-license -verbose -prefix /Users/qt/work/install -release -force-debug-info -separate-debug-info -nomake tests -nomake examples -no-sql-mysql -no-sql-psql -no-sql-odbc -sysconfdir /Library/Preferences/Qt QMAKE_APPLE_DEVICE_ARCHS="x86_64 arm64"'
 -
     Template: 'qtci-macos-11.0-arm64'
     Compiler: 'Clang'
     Target arch: 'x86_64-arm64'
-    Features: ['Insignificant']
+    Features: ['InsignificantTests']
     Configure arguments: '-opensource -confirm-license -verbose -prefix /Users/qt/work/install -release -force-debug-info -separate-debug-info -nomake tests -nomake examples -no-sql-mysql -no-sql-psql -no-sql-odbc -sysconfdir /Library/Preferences/Qt QMAKE_APPLE_DEVICE_ARCHS="x86_64 arm64"'
 -
     Template: 'qtci-macos-10.14-x86_64'
