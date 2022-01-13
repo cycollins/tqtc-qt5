@@ -1,6 +1,6 @@
 ############################################################################
 ##
-## Copyright (C) 2019 The Qt Company Ltd.
+## Copyright (C) 2022 The Qt Company Ltd.
 ## Contact: http://www.qt.io/licensing/
 ##
 ## This file is part of the provisioning scripts of the Qt Toolkit.
@@ -105,6 +105,7 @@ cd $installLocationEmsdk
 "TEMP_DIR = '/tmp'" | Out-File '.emscripten' -Append -Encoding ASCII
 "COMPILER_ENGINE = NODE_JS" | Out-File '.emscripten' -Append -Encoding ASCII
 "JS_ENGINES = [NODE_JS]" | Out-File '.emscripten' -Append -Encoding ASCII
+
 
 Set-EnvironmentVariable "EMSDK" "$installLocationEmsdk"
 Set-EnvironmentVariable "EM_CONFIG" "$installLocationEmsdk\.emscripten"
