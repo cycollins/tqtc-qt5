@@ -132,7 +132,7 @@ Configurations:
     Compiler: 'Clang'
     Configure arguments: '-opensource -confirm-license -verbose -prefix /Users/qt/work/install -debug-and-release -release -nomake tests -no-sql-mysql -plugin-sql-psql -plugin-sql-sqlite -sysconfdir /Library/Preferences/Qt -I/usr/local/opt/openssl/include'
 -
-    Template: 'qtci-macos-11.0-x86_64-102'
+    Template: 'qtci-macos-11-x86_64-104'
     Compiler: 'Clang'
     Configure arguments: '-opensource -confirm-license -verbose -prefix /Users/qt/work/install -debug-and-release -release -nomake tests -no-sql-mysql -plugin-sql-psql -plugin-sql-sqlite -sysconfdir /Library/Preferences/Qt -I/usr/local/opt/openssl/include'
 -
@@ -150,7 +150,7 @@ Configurations:
     Features: ['DisableTests']
     Configure arguments: '-opensource -confirm-license -verbose -prefix /Users/qt/work/install -developer-build -release -force-debug-info -separate-debug-info -nomake tests -nomake examples -sysconfdir /Library/Preferences/Qt -no-sql-psql -no-sql-odbc -no-sql-mysql'
 -
-    Template: 'qtci-macos-11.0-x86_64-102'
+    Template: 'qtci-macos-11-x86_64-104'
     Compiler: 'Clang'
     Target arch: 'x86_64-arm64'
     Configure arguments: '-opensource -confirm-license -verbose -prefix /Users/qt/work/install -release -force-debug-info -separate-debug-info -nomake tests -nomake examples -no-sql-mysql -no-sql-psql -no-sql-odbc -sysconfdir /Library/Preferences/Qt QMAKE_APPLE_DEVICE_ARCHS="x86_64 arm64"'
