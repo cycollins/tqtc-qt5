@@ -118,6 +118,7 @@ Configurations:
     Compiler: 'GCC'
     Configure arguments: '-opensource -confirm-license -verbose -prefix /home/qt/work/install -release -nomake tests -nomake examples -no-libudev -force-debug-info -separate-debug-info -no-sql-mysql -plugin-sql-psql -plugin-sql-sqlite -qt-libjpeg -qt-libpng -xcb -bundled-xcb-xinput -sysconfdir /etc/xdg -qt-pcre -qt-harfbuzz -R . -openssl -I {{.Env.OPENSSL_HOME}}/include -L {{.Env.OPENSSL_HOME}}/lib QMAKE_LFLAGS_APP+=-s'
 -
+    Id: 'macos-xcode-10-x86_64-packaging-build'
     Template: 'qtci-macos-10.13-x86_64-3'
     Compiler: 'Clang'
     Features: ['Packaging']
@@ -149,15 +150,17 @@ Configurations:
     Features: ['DisableTests']
     Configure arguments: '-opensource -confirm-license -verbose -prefix /Users/qt/work/install -developer-build -release -force-debug-info -separate-debug-info -nomake tests -nomake examples -sysconfdir /Library/Preferences/Qt -no-sql-psql -no-sql-odbc -no-sql-mysql'
 -
+    Id: 'macos-latest-xcode-universal-packaging-build'
     Template: 'qtci-macos-11-x86_64-104'
     Compiler: 'Clang'
     Target arch: 'x86_64-arm64'
+    Features: ['Packaging']
+    # Missing OpenSSL, PostgreSQL, SQLite
     Configure arguments: '-opensource -confirm-license -verbose -prefix /Users/qt/work/install -release -force-debug-info -separate-debug-info -nomake tests -nomake examples -no-sql-mysql -no-sql-psql -no-sql-odbc -sysconfdir /Library/Preferences/Qt QMAKE_APPLE_DEVICE_ARCHS="x86_64 arm64"'
 -
     Template: 'qtci-macos-11.0-arm64'
     Compiler: 'Clang'
     Target arch: 'x86_64-arm64'
-    Features: ['InsignificantTests']
     Configure arguments: '-opensource -confirm-license -verbose -prefix /Users/qt/work/install -release -force-debug-info -separate-debug-info -nomake tests -nomake examples -no-sql-mysql -no-sql-psql -no-sql-odbc -sysconfdir /Library/Preferences/Qt QMAKE_APPLE_DEVICE_ARCHS="x86_64 arm64"'
 -
     Template: 'qtci-macos-12-x86_64-102'
