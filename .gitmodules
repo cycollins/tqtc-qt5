@@ -2,7 +2,7 @@
 	path = qtbase
 	url = ../tqtc-qtbase.git
 	alias = qt/qtbase
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = essential
 	repoType = replaced
 [submodule "qtsvg"]
@@ -10,7 +10,7 @@
 	path = qtsvg
 	url = ../tqtc-qtsvg.git
 	alias = qt/qtsvg
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtdeclarative"]
@@ -19,7 +19,7 @@
 	path = qtdeclarative
 	url = ../tqtc-qtdeclarative.git
 	alias = qt/qtdeclarative
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = essential
 	repoType = replaced
 [submodule "qtactiveqt"]
@@ -27,7 +27,7 @@
 	path = qtactiveqt
 	url = ../tqtc-qtactiveqt.git
 	alias = qt/qtactiveqt
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtscript"]
@@ -44,7 +44,7 @@
 	path = qtmultimedia
 	url = ../tqtc-qtmultimedia.git
 	alias = qt/qtmultimedia
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = essential
 	repoType = replaced
 [submodule "qttools"]
@@ -53,7 +53,7 @@
 	path = qttools
 	url = ../tqtc-qttools.git
 	alias = qt/qttools
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = essential
 	repoType = replaced
 [submodule "qtxmlpatterns"]
@@ -62,7 +62,7 @@
 	path = qtxmlpatterns
 	url = ../tqtc-qtxmlpatterns.git
 	alias = qt/qtxmlpatterns
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = deprecated
 	repoType = replaced
 [submodule "qttranslations"]
@@ -70,7 +70,7 @@
 	path = qttranslations
 	url = ../tqtc-qttranslations.git
 	alias = qt/qttranslations
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = essential
 	priority = 30
 	repoType = replaced
@@ -80,7 +80,7 @@
 	path = qtdoc
 	url = ../tqtc-qtdoc.git
 	alias = qt/qtdoc
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = essential
 	priority = 40
 	repoType = replaced
@@ -105,7 +105,7 @@
 	path = qtlocation
 	url = ../tqtc-qtlocation.git
 	alias = qt/qtlocation
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtsensors"]
@@ -114,7 +114,7 @@
 	path = qtsensors
 	url = ../tqtc-qtsensors.git
 	alias = qt/qtsensors
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtsystems"]
@@ -146,7 +146,7 @@
 	path = qtconnectivity
 	url = ../tqtc-qtconnectivity.git
 	alias = qt/qtconnectivity
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtwayland"]
@@ -155,7 +155,7 @@
 	path = qtwayland
 	url = ../tqtc-qtwayland.git
 	alias = qt/qtwayland
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qt3d"]
@@ -164,7 +164,7 @@
 	path = qt3d
 	url = ../tqtc-qt3d.git
 	alias = qt/qt3d
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtimageformats"]
@@ -172,7 +172,7 @@
 	path = qtimageformats
 	url = ../tqtc-qtimageformats.git
 	alias = qt/qtimageformats
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtgraphicaleffects"]
@@ -180,7 +180,7 @@
 	path = qtgraphicaleffects
 	url = ../tqtc-qtgraphicaleffects.git
 	alias = qt/qtgraphicaleffects
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = essential
 	repoType = replaced
 [submodule "qtquickcontrols"]
@@ -189,7 +189,7 @@
 	path = qtquickcontrols
 	url = ../tqtc-qtquickcontrols.git
 	alias = qt/qtquickcontrols
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtserialbus"]
@@ -198,7 +198,7 @@
 	path = qtserialbus
 	url = ../tqtc-qtserialbus.git
 	alias = qt/qtserialbus
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtserialport"]
@@ -206,7 +206,7 @@
 	path = qtserialport
 	url = ../tqtc-qtserialport.git
 	alias = qt/qtserialport
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtx11extras"]
@@ -214,7 +214,7 @@
 	path = qtx11extras
 	url = ../tqtc-qtx11extras.git
 	alias = qt/qtx11extras
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtmacextras"]
@@ -222,7 +222,7 @@
 	path = qtmacextras
 	url = ../tqtc-qtmacextras.git
 	alias = qt/qtmacextras
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtwinextras"]
@@ -231,7 +231,7 @@
 	path = qtwinextras
 	url = ../tqtc-qtwinextras.git
 	alias = qt/qtwinextras
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtandroidextras"]
@@ -239,7 +239,7 @@
 	path = qtandroidextras
 	url = ../tqtc-qtandroidextras.git
 	alias = qt/qtandroidextras
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtwebsockets"]
@@ -248,7 +248,7 @@
 	path = qtwebsockets
 	url = ../tqtc-qtwebsockets.git
 	alias = qt/qtwebsockets
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtwebchannel"]
@@ -257,7 +257,7 @@
 	path = qtwebchannel
 	url = ../tqtc-qtwebchannel.git
 	alias = qt/qtwebchannel
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtwebengine"]
@@ -281,7 +281,7 @@
 	path = qtwebview
 	url = ../tqtc-qtwebview.git
 	alias = qt/qtwebview
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtquickcontrols2"]
@@ -290,7 +290,7 @@
 	path = qtquickcontrols2
 	url = ../tqtc-qtquickcontrols2.git
 	alias = qt/qtquickcontrols2
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = essential
 	repoType = replaced
 [submodule "qtpurchasing"]
@@ -299,7 +299,7 @@
 	path = qtpurchasing
 	url = ../tqtc-qtpurchasing.git
 	alias = qt/qtpurchasing
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtcharts"]
@@ -308,7 +308,7 @@
 	path = qtcharts
 	url = ../tqtc-qtcharts.git
 	alias = qt/qtcharts
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtdatavis3d"]
@@ -317,7 +317,7 @@
 	path = qtdatavis3d
 	url = ../tqtc-qtdatavis3d.git
 	alias = qt/qtdatavis3d
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtvirtualkeyboard"]
@@ -326,7 +326,7 @@
 	path = qtvirtualkeyboard
 	url = ../tqtc-qtvirtualkeyboard.git
 	alias = qt/qtvirtualkeyboard
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtgamepad"]
@@ -335,7 +335,7 @@
 	path = qtgamepad
 	url = ../tqtc-qtgamepad.git
 	alias = qt/qtgamepad
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtscxml"]
@@ -343,7 +343,7 @@
 	path = qtscxml
 	url = ../tqtc-qtscxml.git
 	alias = qt/qtscxml
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtspeech"]
@@ -352,7 +352,7 @@
 	path = qtspeech
 	url = ../tqtc-qtspeech.git
 	alias = qt/qtspeech
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtnetworkauth"]
@@ -360,7 +360,7 @@
 	path = qtnetworkauth
 	url = ../tqtc-qtnetworkauth.git
 	alias = qt/qtnetworkauth
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtremoteobjects"]
@@ -369,7 +369,7 @@
 	path = qtremoteobjects
 	url = ../tqtc-qtremoteobjects.git
 	alias = qt/qtremoteobjects
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtwebglplugin"]
@@ -378,7 +378,7 @@
 	path = qtwebglplugin
 	url = ../tqtc-qtwebglplugin.git
 	alias = qt/qtwebglplugin
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtlottie"]
@@ -386,7 +386,7 @@
 	path = qtlottie
 	url = ../tqtc-qtlottie.git
 	alias = qt/qtlottie
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtquicktimeline"]
@@ -394,7 +394,7 @@
 	path = qtquicktimeline
 	url = ../tqtc-qtquicktimeline
 	alias = qt/qtquicktimeline
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtquick3d"]
@@ -402,7 +402,7 @@
 	path = qtquick3d
 	url = ../tqtc-qtquick3d.git
 	alias = qt/qtquick3d
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.9
 	status = addon
 	repoType = replaced
 [submodule "qtknx"]
