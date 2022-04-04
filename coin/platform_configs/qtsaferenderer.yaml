@@ -1,14 +1,14 @@
 Version: 2
 Configurations:
 -
-    Template: 'qtci-windows-10-x86_64-52'
+    Template: 'qtci-windows-10_21H2-x86_64-51'
     Target os: 'Windows_10_Static'
     Compiler: 'Mingw'
     Features: ['Packaging']
     Environment variables: ['PATH=C:\MINGW810\mingw64\bin;$PATH']
     Configure arguments: '-opensource -confirm-license -verbose -prefix c:\Users\qt\work\install -release -nomake tests -nomake examples -no-icu -opengl dynamic -openssl -I %OPENSSL_INCLUDE_x64% -L %OPENSSL_LIB_x64% -plugin-sql-mysql -plugin-sql-sqlite -plugin-sql-odbc -I %MYSQL_INCLUDE_x64% -L %MYSQL_LIB_x64% -static -no-icu'
 -
-    Template: 'qtci-windows-10-x86_64-52'
+    Template: 'qtci-windows-10_21H2-x86_64-51'
     Compiler: 'Mingw'
     Environment variables: ['PATH=C:\MINGW810\mingw64\bin;$PATH']
     Features: ['Packaging']
@@ -20,19 +20,19 @@ Configurations:
     Environment variables: ['PATH=C:\MINGW730\mingw32\bin;$PATH']
     Configure arguments: '-opensource -confirm-license -verbose -prefix c:\Users\qt\work\install -developer-build -release -nomake tests -opengl dynamic -nomake examples -openssl -I %OPENSSL_INCLUDE_x86% -L %OPENSSL_LIB_x86% -plugin-sql-mysql -plugin-sql-sqlite -plugin-sql-odbc -I %MYSQL_INCLUDE_x86% -L %MYSQL_LIB_x86% -plugin-sql-psql -I %POSTGRESQL_INCLUDE_x86% -L %POSTGRESQL_LIB_x86% -platform win32-g++ -qt-zlib'
 -
-    Template: 'qtci-windows-10-x86_64-52'
+    Template: 'qtci-windows-10_21H2-x86_64-51'
     Target os: 'Windows_10_Static'
     Compiler: 'MSVC2015'
     Features: ['Packaging']
     Configure arguments: '-opensource -confirm-license -verbose -prefix c:\Users\qt\work\install -debug-and-release -release -force-debug-info -nomake tests -nomake examples -opengl dynamic -openssl -I %OPENSSL_INCLUDE_x64% -L %OPENSSL_LIB_x64% -no-sql-mysql -plugin-sql-sqlite -plugin-sql-odbc -I %MYSQL_INCLUDE_x64% -L %MYSQL_LIB_x64% -plugin-sql-psql -I %POSTGRESQL_INCLUDE_x64% -L %POSTGRESQL_LIB_x64% -qt-zlib -static -no-icu'
 -
-    Template: 'qtci-windows-10-x86_64-52'
+    Template: 'qtci-windows-10_21H2-x86_64-51'
     Target os: 'Windows_10_Static'
     Compiler: 'MSVC2019'
     Features: ['Packaging']
     Configure arguments: '-opensource -confirm-license -verbose -prefix c:\Users\qt\work\install -debug-and-release -release -force-debug-info -nomake tests -opengl dynamic -nomake examples -openssl -I %OPENSSL_INCLUDE_x64% -L %OPENSSL_LIB_x64% -no-sql-mysql -plugin-sql-sqlite -plugin-sql-odbc -I %MYSQL_INCLUDE_x64% -L %MYSQL_LIB_x64% -plugin-sql-psql -I %POSTGRESQL_INCLUDE_x64% -L %POSTGRESQL_LIB_x64% -static -no-icu'
 -
-    Template: 'qtci-windows-10-x86_64-52'
+    Template: 'qtci-windows-10_21H2-x86_64-51'
     Compiler: 'MSVC2019'
     Features: ['Packaging', 'DisableTests']
     Configure arguments: '-opensource -confirm-license -verbose -prefix c:\Users\qt\work\install -debug-and-release -release -force-debug-info -nomake tests -opengl dynamic -nomake examples -openssl -I %OPENSSL_INCLUDE_x64% -L %OPENSSL_LIB_x64% -no-sql-mysql -plugin-sql-sqlite -plugin-sql-odbc -I %MYSQL_INCLUDE_x64% -L %MYSQL_LIB_x64% -plugin-sql-psql -I %POSTGRESQL_INCLUDE_x64% -L %POSTGRESQL_LIB_x64% -qt-zlib'
@@ -62,7 +62,7 @@ Configurations:
     Features: ['DisableTests']
     Configure arguments: '-opensource -confirm-license -verbose -prefix /home/qt/work/install -release -nomake tests -nomake examples -no-xcb -R . -openssl -device linux-generic-g++ -device-option CROSS_COMPILE=/opt/yocto-mips64/sysroots/x86_64-pokysdk-linux/usr/bin/mips64-poky-linux/mips64-poky-linux- -device-option DISTRO_OPTS=boot2qt -sysroot /opt/yocto-mips64/sysroots/mips64-poky-linux -extprefix /home/qt/work/install -mysql_config /opt/yocto-mips64/sysroots/mips64-poky-linux/usr/bin/mysql_config -psql_config /dev/null -tslib'
 -
-    Template: 'qtci-windows-10-x86_64-52'
+    Template: 'qtci-windows-10_21H2-x86_64-51'
     Target os: 'QNX_700'
     Target arch: 'armv7'
     Compiler: 'Mingw'
@@ -70,7 +70,7 @@ Configurations:
     Features: ['Packaging', 'DisableTests']
     Configure arguments: '-opensource -confirm-license -verbose -extprefix c:\Users\qt\work\install -release -nomake tests -nomake examples -no-sql-mysql -opengl es2 -xplatform qnx-armle-v7-qcc -Ic:\qnx700\target\qnx7\usr\include\openssl1_1'
 -
-    Template: 'qtci-windows-10-x86_64-52'
+    Template: 'qtci-windows-10_21H2-x86_64-51'
     Target os: 'QNX_700'
     Target arch: 'armv8'
     Compiler: 'Mingw'
@@ -78,7 +78,7 @@ Configurations:
     Features: ['Packaging', 'DisableTests']
     Configure arguments: '-opensource -confirm-license -verbose -extprefix c:\Users\qt\work\install -release -opengl es2 -nomake tests -nomake examples -no-sql-mysql -xplatform qnx-aarch64le-qcc -Ic:\qnx700\target\qnx7\usr\include\openssl1_1'
 -
-    Template: 'qtci-windows-10-x86_64-52'
+    Template: 'qtci-windows-10_21H2-x86_64-51'
     Target os: 'QNX_700'
     Target arch: 'x86_64'
     Compiler: 'Mingw'
