@@ -55,6 +55,22 @@ Configurations:
     Features: ['Packaging', 'DisableTests']
     Configure arguments: '-opensource -confirm-license -verbose -prefix /Users/qt/work/install -debug-and-release -release -nomake tests -no-sql-mysql -plugin-sql-psql -plugin-sql-sqlite -sysconfdir /Library/Preferences/Qt -I/usr/local/opt/openssl/include'
 -
+    Id: 'macos-latest-xcode-universal-packaging-build'
+    Template: 'qtci-macos-11-x86_64-104'
+    Target os: 'MacOS_11'
+    Compiler: 'Clang'
+    Target arch: 'x86_64-arm64'
+    Features: ['Packaging', 'DisableTests']
+    Configure arguments: '-opensource -confirm-license -verbose -prefix /Users/qt/work/install -release -force-debug-info -separate-debug-info -nomake tests -nomake examples -no-sql-mysql -plugin-sql-psql -plugin-sql-sqlite -sysconfdir /Library/Preferences/Qt -I/usr/local/opt/openssl/include QMAKE_APPLE_DEVICE_ARCHS="x86_64 arm64"'
+-
+    Id: 'macos-latest-xcode-universal-packaging-build-static'
+    Target os: 'MacOS_11_Static'
+    Template: 'qtci-macos-11-x86_64-104'
+    Compiler: 'Clang'
+    Target arch: 'x86_64-arm64'
+    Features: ['Packaging']
+    Configure arguments: '-opensource -confirm-license -verbose -prefix /Users/qt/work/install -debug-and-release -release -nomake tests -nomake examples -no-sql-mysql -plugin-sql-psql -plugin-sql-sqlite -sysconfdir /Library/Preferences/Qt -I/usr/local/opt/openssl/include QMAKE_APPLE_DEVICE_ARCHS="x86_64 arm64" -static -no-icu'
+-
     Template: 'qtci-linux-Ubuntu-18.04-x86_64'
     Target os: 'QEMU'
     Target arch: 'mips64'
