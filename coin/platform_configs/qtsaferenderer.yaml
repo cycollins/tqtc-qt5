@@ -30,9 +30,11 @@ Configurations:
     Configure arguments: '-opensource -confirm-license -verbose -prefix /Users/qt/work/install -debug-and-release -nomake tests -no-icu -nomake examples -no-sql-mysql -no-sql-psql -plugin-sql-sqlite -static -xplatform macx-ios-clang'
 -
     Template: 'qtci-macos-10.15-x86_64-100'
+    Target os: 'IOS_ANY'
+    Target arch: 'multi'
     Compiler: 'Clang'
     Features: ['DisableTests']
-    Configure arguments: '-opensource -confirm-license -verbose -prefix /Users/qt/work/install -developer-build -release -no-pch -no-framework -qtnamespace TestNamespace -nomake tests -nomake examples -I/usr/local/opt/openssl/include'
+    Configure arguments: '-opensource -confirm-license -verbose -prefix /Users/qt/work/install -debug-and-release -nomake tests -no-icu -nomake examples -no-sql-mysql -no-sql-psql -plugin-sql-sqlite -static -xplatform macx-ios-clang'
 -
     Template: 'qtci-linux-Ubuntu-18.04-x86_64'
     Target os: 'QEMU'
@@ -78,12 +80,6 @@ Configurations:
     Environment variables: ['PATH=C:\MINGW810\mingw64\bin;$PATH']
     Features: ['Packaging']
     Configure arguments: '-opensource -confirm-license -verbose -prefix c:\Users\qt\work\install -release -force-debug-info -separate-debug-info -nomake tests -nomake examples -opengl dynamic -openssl -I %OPENSSL_INCLUDE_x64% -L %OPENSSL_LIB_x64% -no-sql-mysql -plugin-sql-sqlite -plugin-sql-odbc -I %MYSQL_INCLUDE_x64% -L %MYSQL_LIB_x64% -plugin-sql-psql -I %POSTGRESQL_INCLUDE_x64% -L %POSTGRESQL_LIB_x64% -platform win32-g++ QMAKE_LFLAGS_APP+=-s -qt-zlib'
--
-    Template: 'qtci-windows-7-x86-3'
-    Target os: 'Windows_7_Static'
-    Compiler: 'Mingw73'
-    Environment variables: ['PATH=C:\MINGW730\mingw32\bin;$PATH']
-    Configure arguments: '-opensource -confirm-license -verbose -prefix c:\Users\qt\work\install -developer-build -release -nomake tests -opengl dynamic -nomake examples -openssl -I %OPENSSL_INCLUDE_x86% -L %OPENSSL_LIB_x86% -plugin-sql-mysql -plugin-sql-sqlite -plugin-sql-odbc -I %MYSQL_INCLUDE_x86% -L %MYSQL_LIB_x86% -plugin-sql-psql -I %POSTGRESQL_INCLUDE_x86% -L %POSTGRESQL_LIB_x86% -platform win32-g++ -qt-zlib'
 -
     Template: 'qtci-windows-10_21H2-x86_64-51'
     Target os: 'Windows_10_Static'
@@ -135,13 +131,6 @@ Configurations:
     Target arch: 'x86_64-arm64'
     Features: ['Packaging']
     Configure arguments: '-opensource -confirm-license -verbose -prefix /Users/qt/work/install -debug-and-release -release -nomake tests -nomake examples -no-sql-mysql -plugin-sql-psql -plugin-sql-sqlite -sysconfdir /Library/Preferences/Qt -I/usr/local/opt/openssl/include QMAKE_APPLE_DEVICE_ARCHS="x86_64 arm64" -static -no-icu'
--
-    Template: 'qtci-linux-Ubuntu-18.04-x86_64'
-    Target os: 'QEMU'
-    Target arch: 'mips64'
-    Compiler: 'GCC'
-    Features: ['DisableTests']
-    Configure arguments: '-opensource -confirm-license -verbose -prefix /home/qt/work/install -release -nomake tests -nomake examples -no-xcb -R . -openssl -device linux-generic-g++ -device-option CROSS_COMPILE=/opt/yocto-mips64/sysroots/x86_64-pokysdk-linux/usr/bin/mips64-poky-linux/mips64-poky-linux- -device-option DISTRO_OPTS=boot2qt -sysroot /opt/yocto-mips64/sysroots/mips64-poky-linux -extprefix /home/qt/work/install -mysql_config /opt/yocto-mips64/sysroots/mips64-poky-linux/usr/bin/mysql_config -psql_config /dev/null -tslib'
 -
     Template: 'qtci-windows-10_21H2-x86_64-51'
     Target os: 'QNX_700'
