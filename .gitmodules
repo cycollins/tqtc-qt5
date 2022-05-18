@@ -35,7 +35,7 @@
 	recommends = qttools
 	path = qtscript
 	url = ../qtscript.git
-	branch = 5.15
+	branch = 5.15.10
 	status = deprecated
 	repoType = replaced
 [submodule "qtmultimedia"]
@@ -265,7 +265,7 @@
 	recommends = qtquickcontrols qtquickcontrols2 qtlocation qtwebchannel qttools
 	path = qtwebengine
 	url = ../qtwebengine.git
-	branch = 5.15
+	branch = 5.15.10
 	status = addon
 	priority = 10
 	repoType = replaced
@@ -411,7 +411,7 @@
 	path = qtknx
 	url = ../tqtc-qtknx.git
 	alias = qt/qtknx
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.10
 	status = addon
 	project = qtknx.pro
 [submodule "qtmqtt"]
@@ -419,7 +419,7 @@
 	path = qtmqtt
 	url = ../tqtc-qtmqtt.git
 	alias = qt/qtmqtt
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.10
 	status = addon
 	project = qtmqtt.pro
 [submodule "qtopcua"]
@@ -427,12 +427,12 @@
 	path = qtopcua
 	url = ../tqtc-qtopcua.git
 	alias = qt/qtopcua
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.10
 	status = preview
 [submodule "qtcoap"]
 	depends = qtbase
 	path = qtcoap
 	url = ../tqtc-qtcoap.git
 	alias = qt/qtcoap
-	branch = tqtc/lts-5.15
+	branch = tqtc/lts-5.15.10
 	status = addon
