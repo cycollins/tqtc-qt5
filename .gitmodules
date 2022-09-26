@@ -35,7 +35,7 @@
 	recommends = qttools
 	path = qtscript
 	url = ../qtscript.git
-	branch = 5.15
+	branch = 5.15.11
 	status = deprecated
 	repoType = replaced
 [submodule "qtmultimedia"]
@@ -265,7 +265,7 @@
 	recommends = qtquickcontrols qtquickcontrols2 qtlocation qtwebchannel qttools
 	path = qtwebengine
 	url = ../qtwebengine.git
-	branch = 5.15
+	branch = 5.15.11
 	status = addon
 	priority = 10
 	repoType = replaced
