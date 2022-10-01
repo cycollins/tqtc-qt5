@@ -30,14 +30,6 @@
 	branch = tqtc/lts-5.15.10
 	status = addon
 	repoType = replaced
-[submodule "qtscript"]
-	depends = qtbase
-	recommends = qttools
-	path = qtscript
-	url = ../qtscript.git
-	branch = 5.15.10
-	status = deprecated
-	repoType = replaced
 [submodule "qtmultimedia"]
 	depends = qtbase
 	recommends = qtdeclarative
@@ -117,56 +109,6 @@
 	branch = tqtc/lts-5.15.10
 	status = addon
 	repoType = replaced
-[submodule "qtsystems"]
-	depends = qtbase
-	recommends = qtdeclarative
-	path = qtsystems
-	url = ../qtsystems.git
-	branch = dev
-	status = ignore
-	repoType = inherited
-[submodule "qtfeedback"]
-	depends = qtdeclarative
-	recommends = qtmultimedia
-	path = qtfeedback
-	url = ../qtfeedback.git
-	branch = master
-	status = ignore
-	repoType = inherited
-[submodule "qtpim"]
-	depends = qtdeclarative
-	path = qtpim
-	url = ../qtpim.git
-	branch = dev
-	status = ignore
-	repoType = inherited
-[submodule "qtconnectivity"]
-	depends = qtbase
-	recommends = qtdeclarative qtandroidextras
-	path = qtconnectivity
-	url = ../tqtc-qtconnectivity.git
-	alias = qt/qtconnectivity
-	branch = tqtc/lts-5.15.10
-	status = addon
-	repoType = replaced
-[submodule "qtwayland"]
-	depends = qtbase
-	recommends = qtdeclarative
-	path = qtwayland
-	url = ../tqtc-qtwayland.git
-	alias = qt/qtwayland
-	branch = tqtc/lts-5.15.10
-	status = addon
-	repoType = replaced
-[submodule "qt3d"]
-	depends = qtbase
-	recommends = qtdeclarative qtimageformats qtgamepad
-	path = qt3d
-	url = ../tqtc-qt3d.git
-	alias = qt/qt3d
-	branch = tqtc/lts-5.15.10
-	status = addon
-	repoType = replaced
 [submodule "qtimageformats"]
 	depends = qtbase
 	path = qtimageformats
@@ -192,28 +134,11 @@
 	branch = tqtc/lts-5.15.10
 	status = addon
 	repoType = replaced
-[submodule "qtserialbus"]
-	depends = qtbase
-	recommends = qtserialport
-	path = qtserialbus
-	url = ../tqtc-qtserialbus.git
-	alias = qt/qtserialbus
-	branch = tqtc/lts-5.15.10
-	status = addon
-	repoType = replaced
 [submodule "qtserialport"]
 	depends = qtbase
 	path = qtserialport
 	url = ../tqtc-qtserialport.git
 	alias = qt/qtserialport
-	branch = tqtc/lts-5.15.10
-	status = addon
-	repoType = replaced
-[submodule "qtx11extras"]
-	depends = qtbase
-	path = qtx11extras
-	url = ../tqtc-qtx11extras.git
-	alias = qt/qtx11extras
 	branch = tqtc/lts-5.15.10
 	status = addon
 	repoType = replaced
@@ -269,12 +194,6 @@
 	status = addon
 	priority = 10
 	repoType = replaced
-[submodule "qtcanvas3d"]
-	depends = qtdeclarative
-	path = qtcanvas3d
-	url = ../qtcanvas3d.git
-	branch = dev
-	status = ignore
 [submodule "qtwebview"]
 	depends = qtdeclarative
 	recommends = qtwebengine
@@ -293,33 +212,6 @@
 	branch = tqtc/lts-5.15.10
 	status = essential
 	repoType = replaced
-[submodule "qtpurchasing"]
-	depends = qtbase
-	recommends = qtdeclarative qtandroidextras
-	path = qtpurchasing
-	url = ../tqtc-qtpurchasing.git
-	alias = qt/qtpurchasing
-	branch = tqtc/lts-5.15.10
-	status = addon
-	repoType = replaced
-[submodule "qtcharts"]
-	depends = qtbase
-	recommends = qtdeclarative qtmultimedia
-	path = qtcharts
-	url = ../tqtc-qtcharts.git
-	alias = qt/qtcharts
-	branch = tqtc/lts-5.15.10
-	status = addon
-	repoType = replaced
-[submodule "qtdatavis3d"]
-	depends = qtbase
-	recommends = qtdeclarative qtmultimedia
-	path = qtdatavis3d
-	url = ../tqtc-qtdatavis3d.git
-	alias = qt/qtdatavis3d
-	branch = tqtc/lts-5.15.10
-	status = addon
-	repoType = replaced
 [submodule "qtvirtualkeyboard"]
 	depends = qtbase qtdeclarative qtsvg
 	recommends = qtmultimedia qtquickcontrols
@@ -329,110 +221,3 @@
 	branch = tqtc/lts-5.15.10
 	status = addon
 	repoType = replaced
-[submodule "qtgamepad"]
-	depends = qtbase
-	recommends = qtdeclarative
-	path = qtgamepad
-	url = ../tqtc-qtgamepad.git
-	alias = qt/qtgamepad
-	branch = tqtc/lts-5.15.10
-	status = addon
-	repoType = replaced
-[submodule "qtscxml"]
-	depends = qtbase qtdeclarative
-	path = qtscxml
-	url = ../tqtc-qtscxml.git
-	alias = qt/qtscxml
-	branch = tqtc/lts-5.15.10
-	status = addon
-	repoType = replaced
-[submodule "qtspeech"]
-	depends = qtbase
-	recommends = qtdeclarative qtmultimedia
-	path = qtspeech
-	url = ../tqtc-qtspeech.git
-	alias = qt/qtspeech
-	branch = tqtc/lts-5.15.10
-	status = addon
-	repoType = replaced
-[submodule "qtnetworkauth"]
-	depends = qtbase
-	path = qtnetworkauth
-	url = ../tqtc-qtnetworkauth.git
-	alias = qt/qtnetworkauth
-	branch = tqtc/lts-5.15.10
-	status = addon
-	repoType = replaced
-[submodule "qtremoteobjects"]
-	depends = qtbase
-	recommends = qtdeclarative
-	path = qtremoteobjects
-	url = ../tqtc-qtremoteobjects.git
-	alias = qt/qtremoteobjects
-	branch = tqtc/lts-5.15.10
-	status = addon
-	repoType = replaced
-[submodule "qtwebglplugin"]
-	depends = qtbase qtwebsockets
-	recommends = qtdeclarative
-	path = qtwebglplugin
-	url = ../tqtc-qtwebglplugin.git
-	alias = qt/qtwebglplugin
-	branch = tqtc/lts-5.15.10
-	status = addon
-	repoType = replaced
-[submodule "qtlottie"]
-	depends = qtbase qtdeclarative
-	path = qtlottie
-	url = ../tqtc-qtlottie.git
-	alias = qt/qtlottie
-	branch = tqtc/lts-5.15.10
-	status = addon
-	repoType = replaced
-[submodule "qtquicktimeline"]
-	depends = qtbase qtdeclarative
-	path = qtquicktimeline
-	url = ../tqtc-qtquicktimeline
-	alias = qt/qtquicktimeline
-	branch = tqtc/lts-5.15.10
-	status = addon
-	repoType = replaced
-[submodule "qtquick3d"]
-	depends = qtbase qtdeclarative
-	path = qtquick3d
-	url = ../tqtc-qtquick3d.git
-	alias = qt/qtquick3d
-	branch = tqtc/lts-5.15.10
-	status = addon
-	repoType = replaced
-[submodule "qtknx"]
-	depends = qtbase
-	recommends = qtdeclarative
-	path = qtknx
-	url = ../tqtc-qtknx.git
-	alias = qt/qtknx
-	branch = tqtc/lts-5.15.10
-	status = addon
-	project = qtknx.pro
-[submodule "qtmqtt"]
-	depends = qtbase
-	path = qtmqtt
-	url = ../tqtc-qtmqtt.git
-	alias = qt/qtmqtt
-	branch = tqtc/lts-5.15.10
-	status = addon
-	project = qtmqtt.pro
-[submodule "qtopcua"]
-	depends = qtbase qtdeclarative
-	path = qtopcua
-	url = ../tqtc-qtopcua.git
-	alias = qt/qtopcua
-	branch = tqtc/lts-5.15.10
-	status = preview
-[submodule "qtcoap"]
-	depends = qtbase
-	path = qtcoap
-	url = ../tqtc-qtcoap.git
-	alias = qt/qtcoap
-	branch = tqtc/lts-5.15.10
-	status = addon
